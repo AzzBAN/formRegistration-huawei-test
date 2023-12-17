@@ -47,7 +47,7 @@ const loginForm = () => {
         console.log("Success:", data);
         showNotificationSucess(data.message);
         handleLoginSuccess(data);
-        window.location.href = "/Frontend/landing/index.html";
+        window.location.href = "../landing/index.html";
         // hideLoginForm();
       } else {
         console.log("Error:", data);

@@ -12,7 +12,6 @@ export class User extends Model {
 
 async function InitDBClient(): Promise<SequelizeMySQLClient> {
   log.info("Creating Database Client");
-
   const db = new Sequelize({
     dialect: "mysql",
     host: process.env.DB_HOST,

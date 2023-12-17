@@ -7,7 +7,7 @@ import time
 driver = webdriver.Chrome()
 
 # Open the registration form page
-driver.get("http://127.0.0.1:5500/Frontend/regis/registration.html")
+driver.get("http://127.0.0.1:5500/regis/registration.html")
 
 # Function to find an element by its ID
 def find_element_by_id(element_id):

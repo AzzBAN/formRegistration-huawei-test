@@ -7,6 +7,8 @@ import { UserExecutor } from "./service/user/executor";
 import { UserHTTPConnector } from "./service/user/http";
 
 async function main() {
+  dotenv.config();
+
   log.info("Starting Application");
 
   SetUpLog();
