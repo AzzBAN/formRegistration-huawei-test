@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" />
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div id="page-container">
+      <div id="notification" hidden>Registrasi Berhasil</div>
+      <div id="form-container">
+        <h1 style="margin-top: 10px">Login</h1>
+        <form id="login">
+          <div class="fieldEmail">
+            <label for="lemail">Email:</label>
+            <input type="email" id="lemail" name="email" onblur="validateEmailInput(this)" />
+            <p id="emailError" class="error"></p>
+          </div>
+          <div class="fieldPassword">
+            <label for="lpassword">Password:</label>
+            <input type="password" id="lpassword" name="password" onblur="validatePasswordInput(this)" />
+            <p id="passwordError" class="error"></p>
+          </div>
+          <button type="submit">Submit</button>
+          <a href="/Frontend/regis/registration.html">Registration Here.</a>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
